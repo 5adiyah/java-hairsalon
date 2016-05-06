@@ -1,13 +1,34 @@
-<h1>Leap year detector</h1>
+<div class="maincontent">
+  <div class="whitebox">
+    <div class="topbar">
+      <p>. . .</p>
+    </div>
 
-<p>Find out if any year to the form below.  Submit your year and we will tell you
-  if it is a leap year!</p>
 
-<form action='/detector' method='get'>
-  <div class="form-group">
-    <label for="year">Year</label>
-    <input id="year" name="year" class="form-control" type="text">
+  <div class="container">
+    <form id="changethis" action="/detector" method="post" class="center">
+
+      <div class="row">
+        <label for="changethis" class="two columns">Label</label>
+        <input type="text" id="changethis" name="changethis" class="ten columns form-control">
+      </div>
+
+      <div class="row">
+        <div class="empty four columns">&nbsp</div>
+        <button type="submit" class="button four columns">Submit</button>
+        <div class="empty four columns">&nbsp</div>
+      </div>
+
+    </form>
+
+    <hr>
+    <p class="strong">Title</p>
+    <ul id="changethis"></ul>
+    <div id="changethis">
+      <h3></h3>
+      <p>Insert Short blurb about program</p>
+    </div>
   </div>
 
-  <button type="submit" class="btn btn-info">Is it a leap year?</button>
-</form>
+  </div>
+</div>
