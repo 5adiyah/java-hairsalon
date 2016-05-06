@@ -1,5 +1,5 @@
 body {
-  background-color: #7BB0A6;
+    background-color: #FACA9B;
   color: #140023;
 }
 
@@ -24,6 +24,14 @@ body {
   background-color: #fafafa;
   margin: 3% auto;
   border-radius: 2% 2% 0.5% 0.5%;
+}
+
+.whitecircle {
+  width: 650px;
+  height: 590px;
+  margin: auto;
+  border-radius: 100%;
+  background-color: #fff;
 }
 
 .topbar{
@@ -100,4 +108,29 @@ h3 {
   letter-spacing: 4px;
   font-size: 1.5em;
   text-decoration: underline;
+}
+
+.logo {
+  padding-top: 70px;
+}
+
+.logo2 {
+  padding-top: 30px;
+}
+
+input {
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.sNames {
+    color: #5A4D4D;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1px;
+}
+
+.stylist {
+  margin-bottom: 20px;
 }
