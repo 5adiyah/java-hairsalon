@@ -46,7 +46,7 @@ public class Client {
       Client newClient = (Client) otherClient;
       return this.getName().equals(newClient.getName()) &&
              this.getId() == newClient.getId() &&
-             this.getPhone() == newClient.getPhone() &&
+             this.getPhone().equals(newClient.getPhone()) &&
              this.getStylistId() == newClient.getStylistId();
     }
   }

@@ -43,12 +43,12 @@ public class ClientTest {
     assertTrue(firstClient.equals(secondClient));
   }
 
-  // @Test
-  // public void save_returnsTrueTheSame() {
-  //   Client myClient = new Client("Jane Doe", "5035551233", 1);
-  //   myClient.save();
-  //   assertTrue(Client.allClients().get(0).equals(myClient));
-  // }
+  @Test
+  public void save_returnsTrueTheSame() {
+    Client myClient = new Client("Jane Doe", "5035551233", 1);
+    myClient.save();
+    assertTrue(Client.allClients().get(0).equals(myClient));
+  }
 
   @Test
   public void save_assignsIdToObject() {
@@ -58,24 +58,22 @@ public class ClientTest {
     assertEquals(myClient.getId(), savedClient.getId());
   }
 
-  // @Test
-  // public void find_findsClientInDatabase_true() {
-  //   Client myClient = new Client("Jane Doe", "5035551233", 1);
-  //   myClient.save();
-  //   Client savedClient = Client.find(myClient.getId());
-  //   assertTrue(myClient.equals(savedClient));
-  // }
+  @Test
+  public void find_findsClientInDatabase_true() {
+    Client myClient = new Client("Jane Doe", "5035551233", 1);
+    myClient.save();
+    Client savedClient = Client.find(myClient.getId());
+    assertTrue(myClient.equals(savedClient));
+  }
 
-  // @Test
-  // public void save_savesStylistIdIntoDB_true() {
-  //   Stylist myStylist = new Stylist("Household chores");
-  //   myStylist.save();
-  //   Client myClient = new Client("Mow the lawn", myStylist.getId());
-  //   myClient.save();
-  //   Client savedClient = Client.find(myClient.getId());
-  //   assertEquals(savedClient.getStylistId(), myStylist.getId());
-  // }
-
-
+  @Test
+  public void save_savesStylistIdIntoDB_true() {
+    Stylist myStylist = new Stylist("John Doe", "5031235555");
+    myStylist.save();
+    Client myClient = new Client("Jane Doe", "5035551233", myStylist.getId());
+    myClient.save();
+    Client savedClient = Client.find(myClient.getId());
+    assertEquals(savedClient.getStylistId(), myStylist.getId());
+  }
 
 }

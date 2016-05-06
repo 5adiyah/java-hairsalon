@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StylistTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-05-06T19:20:54" hostname="Lakis-Air.clients.ad.pcc.edu" time="0.21">
+  <properties/>
+  <testcase name="allStylists_emptyAtFirst" classname="StylistTest" time="0.018"/>
+  <testcase name="getName_clientInstantiatesWithName_String" classname="StylistTest" time="0.012"/>
+  <testcase name="Stylist_instantiatesCorrectly_true" classname="StylistTest" time="0.011"/>
+  <testcase name="equals_returnsTrueIfStylistAretheSame" classname="StylistTest" time="0.009"/>
+  <testcase name="find_findsStylistInDatabase_true" classname="StylistTest" time="0.035"/>
+  <testcase name="save_assignsIdToObject" classname="StylistTest" time="0.044"/>
+  <testcase name="getClients_retrievesALlClientsFromDatabase_tasksList" classname="StylistTest" time="0.05"/>
+  <testcase name="save_returnsTrueTheSame" classname="StylistTest" time="0.026"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
