@@ -1,0 +1,18 @@
+<p class="center logo2"><img src="/logo.jpg" width="30%"/></p>
+<label class="stylist">Stylist Info:</label>
+<ul>
+  <li class="sNames">$stylist.getName()</li>
+  <li class="sNames">$stylist.getPhone()</li>
+</ul>
+
+<!-- <ul>
+  #foreach($client in $stylist.getClients())
+   <a href = "/client/$individualClient.getClientId()"><li class="sNames">$individualClient.getClientName()</li></a>
+  #end
+</ul> -->
+
+<a href="/stylists/$stylist.getId()/clients/new"><button type="submit" class="btn twelve columns button">Click Here to Add a Client</button></a>
+
+
+
+<!-- href="/stylist/$stylist.getId() -->

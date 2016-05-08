@@ -27,7 +27,7 @@ public class Client {
     return phone;
   }
 
-  public int getStylistId(){
+  public int getStylist_Id(){
     return stylist_id;
   }
 
@@ -47,7 +47,7 @@ public class Client {
       return this.getName().equals(newClient.getName()) &&
              this.getId() == newClient.getId() &&
              this.getPhone().equals(newClient.getPhone()) &&
-             this.getStylistId() == newClient.getStylistId();
+             this.getStylist_Id() == newClient.getStylist_Id();
     }
   }
 

@@ -2,7 +2,7 @@
 <label class="stylist">Our Talented Stylists</label>
   <ul>
     #foreach($stylist in $stylists)
-     <li><a href="/stylists/$stylist.getId()" class="sNames">$stylist.allStylists()</a></li>
+     <li><a href="/stylists/$stylist.getId()" class="sNames">$stylist.getName()</a></li>
      #end
   </ul>
 
