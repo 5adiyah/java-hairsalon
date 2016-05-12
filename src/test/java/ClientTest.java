@@ -73,7 +73,7 @@ public class ClientTest {
     Client myClient = new Client("Jane Doe", "5035551233", myStylist.getId());
     myClient.save();
     Client savedClient = Client.find(myClient.getId());
-    assertEquals(savedClient.getStylistId(), myStylist.getId());
+    assertEquals(savedClient.getStylist_Id(), myStylist.getId());
   }
 
 }
