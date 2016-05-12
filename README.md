@@ -25,14 +25,17 @@ $ postgres
 $ psql
 ```
 
-Create `hair_salon` database:
+Create `hair_salon` by following the steps below:
 ```
 $ CREATE DATABASE hair_salon;
+$ \c hair_salon;
+$ CREATE TABLE stylists (id serial PRIMARY KEY, name varchar, phone varchar);
+$ CREATE TABLE clients (id serial PRIMARY KEY, name varchar, phone varchar, stylist_id int);
+$ CREATE DATABASE hair_salon_test WITH TEMPLATE hair_salon;
 ```
 
-Navigate back to the directory where this repository has been cloned, import the database, then run gradle:
+Navigate back to the directory where this repository has been cloned, then run gradle:
 ```
-$ pg_dump hair_salon.sql
 $ gradle run
 ```
 
