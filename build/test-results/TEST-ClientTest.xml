@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ClientTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-05-17T16:57:23" hostname="epicodus-67.local" time="0.084">
+  <properties/>
+  <testcase name="find_findsClientInDatabase_true" classname="ClientTest" time="0.014"/>
+  <testcase name="save_savesStylistIdIntoDB_true" classname="ClientTest" time="0.019"/>
+  <testcase name="getName_clientInstantiatesWithName_String" classname="ClientTest" time="0.006"/>
+  <testcase name="equals_returnsTrueIfStylistsAretheSame" classname="ClientTest" time="0.005"/>
+  <testcase name="Client_instantiatesCorrectly_true" classname="ClientTest" time="0.004"/>
+  <testcase name="save_assignsIdToObject" classname="ClientTest" time="0.013"/>
+  <testcase name="save_returnsTrueTheSame" classname="ClientTest" time="0.014"/>
+  <testcase name="allClients_emptyAtFirst" classname="ClientTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
